@@ -15,5 +15,10 @@ def multiply(y,z):
 
 def remainder(u,c):
     answer = u%c
-    return answer        
+    return answer 
+
+    
+def add(w,r):
+    answer = r+w
+    return answer           
 
