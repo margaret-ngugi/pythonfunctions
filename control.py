@@ -92,7 +92,7 @@ def sum_even():
     for i in range(0,15):
         if i%2==0:
            sum=sum+1
-    print(sum)    
+print(sum_even)    
     
 
 
@@ -101,6 +101,32 @@ def sum_even():
 def divisible_three(n1,n2):
     sum=0
     for i in range(n1,n2):
-    if i%3==0:
+      if i%3==0:
         sum+=1
     print(sum)    
+
+    #Define a function that accepts a string as input and uses the for loop to iterate
+# through the string and count the vowels
+
+def count_vowels(name):
+    count=0
+    vowels=("a","e","i","o","u")
+    for i in name:
+        for b in vowels:
+            if i==b:
+                count+=1
+        
+    return count
+print(count_vowels("margaret"))    
+
+#or
+def count_vowels(school):
+    count=0
+    vowels="a","e","i","o","u"
+    for char in school:
+        if char in vowels:
+            count+=1
+    return count
+school="Akirachix" 
+my_vowels=count_vowels(school)
+print(my_vowels) 
